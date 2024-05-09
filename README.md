@@ -1,5 +1,15 @@
 # Automated Crafting
-> This plugin will no longer be updated beyond 1.20.2 as vanilla has introduced the Crafter block making this plugin obsolete.
+> ~~This plugin will no longer be updated beyond 1.20.2 as vanilla has introduced the Crafter block making this plugin obsolete.~~
+
+
+> This (DeltaDDN's) fork of the plugin is being poorly patched to work with newer releases until the Crafter block is put into release status.
+> 
+> It's not well-patched, throws exceptions, and generally should not be trusted. Honestly, I don't know how to write Java, and I'm just stumbling along. //DDDN
+>
+> 
+> Release dated 24-05-09 was tested against Paper 1.20.6-54, which is an experimental build. This release will work exclusively with 1.20.6 servers, as server-version references are hardcoded.
+>
+> 
 
 An open-source plugin for Bukkit which adds autocrafters capable of automatically crafting anything.
 
