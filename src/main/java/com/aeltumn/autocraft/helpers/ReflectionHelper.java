@@ -17,8 +17,8 @@ import java.util.Optional;
 public final class ReflectionHelper {
     private static final String NMS_STRING = "net.minecraft.";
     private static final String CB_STRING = "org.bukkit.craftbukkit.";
-    private static String version = null; //`v1_12_R1`
-    private static String cbPackage = ""; //`org.bukkit.craftbukkit.v1_12_R1.`
+    private static String version = "v1_20_R6";//null; //`v1_12_R1`
+    private static String cbPackage = "org.bukkit.craftbukkit.v1_20_R6."; //`org.bukkit.craftbukkit.v1_12_R1.`
 
     /**
      * Loads the version this utility looks at to determine the class
@@ -30,7 +30,7 @@ public final class ReflectionHelper {
         if (full.startsWith(NMS_STRING)) s = NMS_STRING.length();
         if (full.startsWith(CB_STRING)) s = CB_STRING.length();
         if (s == 0)
-            throw new UnsupportedOperationException("Tried to load version of NMS/CB package without passing a usable package.");
+            throw new UnsupportedOperationException("Tried to load version of NMS/CB package without passing a usable package. " + NMS_STRING);
 
         for (int c = s; c < full.length(); c++) {
             final char ch = full.charAt(c);
@@ -45,7 +45,7 @@ public final class ReflectionHelper {
      * Returns the Minecraft version being used.
      */
     public static String getVersion() {
-        if (version == null) loadVersion(Bukkit.getServer().getClass().getPackage().getName());
+        if (version == null) loadVersion(Bukkit.getServer().getBukkitVersion());
         return version;
     }
 

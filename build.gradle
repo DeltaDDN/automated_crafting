@@ -7,13 +7,13 @@ plugins {
 }
 
 group 'com.aeltumn'
-version '2.6.2'
+version '2.6.3'
 
 sourceCompatibility = 17
 compileJava.options.encoding = 'UTF-8'
 
 ext {
-    minecraftVersion = '1.18-R0.1-SNAPSHOT'
+    minecraftVersion = '1.20.6-R0.1-SNAPSHOT'
 }
 
 repositories {
@@ -51,7 +51,7 @@ jar {
     manifest {
         attributes(
                 'Implementation-Version': version,
-                'Implementation-Vendor': "Aeltumn",
+                'Implementation-Vendor': "DeltaDDN",
                 'Built-By': System.properties['user.name'],
                 'Build-Timestamp': new SimpleDateFormat("HH:mm dd-MM-yyyy").format(new Date()),
                 'Created-By': "Gradle ${gradle.gradleVersion}",
@@ -65,7 +65,7 @@ spigot {
     description "An open-source autocrafting plugin for Bukkit."
     load STARTUP
     authors "Aeltumn"
-    apiVersion '1.18'
+    apiVersion '1.20.6'
     commands {
         reloadrecipes {
             permission "automatedcrafting.reload"
@@ -86,6 +86,6 @@ spigot {
 
     debug {
         eula true
-        buildVersion '1.18.1'
+        buildVersion '1.20.6-R0.1-SNAPSHOT'
     }
 }
