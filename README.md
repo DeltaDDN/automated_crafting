@@ -8,8 +8,8 @@
 >
 > 
 > Release dated 24-05-09 was tested against Paper 1.20.6-54, which is an experimental build. This release will work exclusively with 1.20.6 servers, as server-version references are hardcoded.
->
-> 
+
+**This fork of the plugin will not be updated, as Mojang officially released the crafter block in 1.21**
 
 An open-source plugin for Bukkit which adds autocrafters capable of automatically crafting anything.
 
